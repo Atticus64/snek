@@ -1,4 +1,4 @@
-# Skek 
+# Snek 
 
 A minimal snake game implementation
 
