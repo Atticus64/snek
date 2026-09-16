@@ -69,6 +69,12 @@ window_t* create_window(int heigth, int width) {
 }
 
 void destroy_window(window_t* window) {
+
+	for (int i = 0; i < window->height; i++) {
+		if (window->data[i] != NULL) {
+			free(window->data[i]);
+		}
+	}
 	free(window->data);
 	free(window);
 }
